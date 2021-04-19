@@ -1,0 +1,11 @@
+#Intellij files:
+.idea
+*.iml
+
+#maven output dir:
+target
+*.project
+*.classpath
+*.prefs
+*.log
+/pets-adoption/src/main/java/com/petsadoption/controllers/parameters/root_path
