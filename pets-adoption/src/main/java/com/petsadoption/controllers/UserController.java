@@ -28,7 +28,6 @@ public class UserController {
 
     @PostMapping("/user")
     public User addUser(@RequestBody AddUserRequest addUserRequest) throws PetsAdoptionException {
-        logger.error("Invalid input" + addUserRequest);
         if (!addUserRequestValidation(addUserRequest)) {
             logger.error("Invalid input" + addUserRequest);
             throw new PetsAdoptionException("Invalid input " + addUserRequest);
